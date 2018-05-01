@@ -1,0 +1,29 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:batch="http://www.springframework.org/schema/batch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+<!-- 	<bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource"
+    	destroy-method="close">
+    	<property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+		<property name="url" value="jdbc:sqlserver://elm-rnageswa\SQL2008r2dev;DatabaseName=test123" />
+		<property name="username" value="sa" />
+		<property name="password" value="Datac3rtsql" />
+	</bean> -->
+	
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url" value="jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.106.175.71)(PORT=1521))(CONNECT_DATA= (SERVER=dedicated)(SERVICE_NAME=ICP)))" />
+		<property name="username" value="aceloading" />
+		<property name="password" value="aceuser" />
+	</bean>
+
+ <!-- <bean id="dataSource"
+		class="org.springframework.jdbc.datasource.SingleConnectionDataSource">
+		<property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+		<property name="url" value="jdbc:sqlserver://elm-rnageswa\SQL2008r2dev;DatabaseName=test123" />
+		<property name="username" value="sa" />
+		<property name="password" value="Datac3rtsql" />
+	</bean> -->
+</beans>			
