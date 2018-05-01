@@ -37,14 +37,14 @@ public class MemberFieldSetMapper implements FieldSetMapper<Member> {
 		memberLoad.setMbrPtyId(memberLoadFiledset.readInt(1));
 		memberLoad.setGivenName(memberLoadFiledset.readString(2));
 		memberLoad.setFamilyName(memberLoadFiledset.readString(3));
-//		memberLoad.setSourceSubscriberID(memberLoadFiledset.readString(4));
-//		memberLoad.setDepnNbr(memberLoadFiledset.readInt(5));
-//		memberLoad.setDepSequenceNumber(memberLoadFiledset.readString(6));
-//		memberLoad.setRelCD(memberLoadFiledset.readString(7));
-//		memberLoad.setBirthDate(memberLoadFiledset.readString(8));
-//		memberLoad.setCdrTypeCD(memberLoadFiledset.readString(9));
-//		memberLoad.setMemberRowEffectiveDate(memberLoadFiledset.readString(10));
-//		memberLoad.setMemberrowExpireDate(memberLoadFiledset.readString(11));
+ 	    memberLoad.setSourceSubscriberID(memberLoadFiledset.readString(4));
+ 		memberLoad.setDepnNbr(memberLoadFiledset.readInt(5));
+ 		memberLoad.setDepSequenceNumber(memberLoadFiledset.readString(6));
+ 		memberLoad.setRelCD(memberLoadFiledset.readString(7));
+ 		memberLoad.setBirthDate(memberLoadFiledset.readString(8));
+ 		memberLoad.setCdrTypeCD(memberLoadFiledset.readString(9));
+ 		memberLoad.setMemberRowEffectiveDate(memberLoadFiledset.readString(10));
+		memberLoad.setMemberrowExpireDate(memberLoadFiledset.readString(11));
 		return memberLoad;
 		
 	}

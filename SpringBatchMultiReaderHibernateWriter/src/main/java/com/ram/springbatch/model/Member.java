@@ -1,27 +1,21 @@
 package com.ram.springbatch.model;
 
 import java.io.Serializable;
-import java.math.BigDecimal;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
-import javax.persistence.Table;
 
 @Entity
-@Table(name="MEMBER_TEMP")
 public class Member implements Serializable{
 
-	public Member(){
-		
+	public Member(){		
 	
 	}
 	
-    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "MEMBER_SEQ")
-    @SequenceGenerator(name = "MEMBER_SEQ", sequenceName = "MEMBER_SEQ",allocationSize=1)
+    @GeneratedValue(strategy = GenerationType.AUTO)  
     @Id
     @Column(name = "ID")
 	private Integer id;
