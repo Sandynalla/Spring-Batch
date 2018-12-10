@@ -10,7 +10,7 @@ import com.ram.springbatch.model.Member;
 
 
 /**
- * @author snalla16
+ * @author sandeep Nalla
  *
  */
 public class MemberFieldSetMapper implements FieldSetMapper<Member> {
